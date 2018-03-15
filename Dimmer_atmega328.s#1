@@ -19644,6 +19644,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="C5" library="rcl" deviceset="CPOL-US" device="E2.5-6" value="10uf"/>
 <part name="C7" library="rcl" deviceset="CPOL-US" device="E2.5-6" value="10uf"/>
 <part name="X3" library="con-wago-500" deviceset="W237-102" device=""/>
+<part name="R1" library="resistor" deviceset="R-US_" device="0207/10" value="330"/>
 </parts>
 <sheets>
 <sheet>
@@ -20045,6 +20046,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="R16" gate="G$1" x="76.2" y="60.96" rot="R180"/>
 <instance part="R17" gate="G$1" x="35.56" y="53.34" rot="R270"/>
 <instance part="R18" gate="G$1" x="45.72" y="40.64" rot="R270"/>
+<instance part="R1" gate="G$1" x="78.74" y="40.64" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -20137,6 +20139,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="96.52" y1="20.32" x2="104.14" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="20.32" x2="104.14" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<junction x="83.82" y="40.64"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -20146,6 +20150,9 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="71.12" y1="53.34" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="OK2" gate="-1" pin="A1"/>
 <wire x1="68.58" y1="50.8" x2="71.12" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="50.8" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="40.64" x2="73.66" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
